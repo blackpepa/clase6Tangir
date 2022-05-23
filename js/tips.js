@@ -58,7 +58,7 @@ function datosSugerirPropina() {
     let newTip = true;
 
     while (newTip) {
-        let msj = "";
+        let txt = "";
         let lugar = prompt("Ingrese el nombre del lugar que quiere reseñar");
         let tipo = prompt("Ingrese el tipo de comercio o servicio. Ejemplos: Restaurante, delivery, etc.")
         let servicio = parseInt(prompt("Ingresar un número del 1 al 5, siendo 1 malo y 5 genial."));
@@ -66,7 +66,7 @@ function datosSugerirPropina() {
 
         if (!lugar) {
 
-            msj += "\nDebe ingresar un lugar";
+            txt += "\nDebe ingresar un lugar";
 
         }
         if (!tipo){
@@ -75,18 +75,18 @@ function datosSugerirPropina() {
         }
         if (!servicio<5 && !servicio >=1) {
 
-            msj += "\nDebe ingresar un número del 1 al 5";
+            txt += "\nDebe ingresar un número del 1 al 5";
         }
 
         if (isNaN(porcentaje)) {
 
-            msj += "\nDebe ingresar un número para reflejar el porcentaje";
+            txt += "\nDebe ingresar un número para reflejar el porcentaje";
 
         }
 
-        if (msj != "") {
+        if (txt != "") {
 
-            alert(msj);
+            alert(txt);
             newTip = confirm("Desea cargar de nuevo los datos");
 
 
@@ -123,4 +123,3 @@ function propinasSugeridas(){
         alert(mensaje);
 
 }
-

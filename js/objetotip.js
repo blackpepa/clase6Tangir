@@ -10,7 +10,7 @@ class sugerencias {
 
     } 
     mostrar_listado(){
-        return ("Nombre:" + this.lugar + " - Tipo:" + this.tipo + " - Servicio:" + this.servicio + " Porcentaje sugerido d epropina:" + this.porcentaje + "%");
+        return ("Nombre:" + this.lugar + " - Tipo:" + this.tipo + " - Servicio:" + this.servicio + " Porcentaje sugerido de propina:" + this.porcentaje + "%");
     }
     
 }
